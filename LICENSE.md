@@ -1,6 +1,4 @@
-title:Earth System Model Evaluation Tool VERSION 1.0 (the Software) License
-url: license.html
-save_as: license.html
+# LICENSE
 
 PLEASE READ THIS SOFTWARE LICENSE ("LICENSE") CAREFULLY. USE OF THE SOFTWARE CONSTITUTES ACCEPTANCE OF THESE TERMS
 ------------------------------------------------------------------------------------------------------------------
@@ -111,10 +109,6 @@ represents a product of considerable effort by the development team.
 
 ------------------------------------------------------------------------
 
-Please contact [Dr Veronika
-Eyring](javascript:mail('veronika.eyring','dlr.de'))
-(veronika.eyring"at"dlr.de) and [Dr Axel
-Lauer](javascript:mail('axel.lauer','dlr.de')) (axel.lauer"at"dlr.de) if
-you want, in addition to its use, join the Software Development Team or
+Please contact [Dr Veronika Eyring](http://www.dlr.de/pa/desktopdefault.aspx/tabid-2357/3477_read-8781) and [Dr Axel Lauer](http://www.dlr.de/pa/desktopdefault.aspx/tabid-2357/3477_read-32439) if you want, in addition to its use, join the Software Development Team or
 if you have any questions on the Software.
 

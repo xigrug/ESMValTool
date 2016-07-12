@@ -1,12 +1,9 @@
-Title: About
-url: 
-save_as: index.html
-
-**What is the ESMValTool?**
+# README
+## What is the ESMValTool?
 
 The Earth System Model eValuation Tool (ESMValTool) is a community diagnostics and performance metrics tool for the evaluation of Earth System Models (ESMs) that allows for routine comparison of single or multiple models, either against predecessor versions or against observations. The priority of the effort so far has been to target specific scientific themes focusing on selected Essential Climate Variables, a range of known systematic biases common to ESMs, such as coupled tropical climate variability, monsoons, Southern Ocean processes, continental dry biases and soil hydrology-climate interactions, as well as atmospheric CO2 budgets, tropospheric and stratospheric ozone, and tropospheric aerosols. The tool is being developed in such a way that additional analyses can easily be added. A set of standard namelists for each scientific topic reproduces specific sets of diagnostics or performance metrics that have demonstrated their importance in ESM evaluation in the peer-reviewed literature. The ESMValTool is a community effort open to both users and developers encouraging open exchange of diagnostic source code and evaluation results from the CMIP ensemble. This will facilitate and improve ESM evaluation beyond the state-of-the-art and aims at supporting such activities within the Coupled Model Intercomparison Project (CMIP) and at individual modeling centers. Ultimately, we envisage running the ESMValTool alongside the Earth System Grid Federation (ESGF) as part of a more routine evaluation of CMIP model simulations while utilizing observations available in standard formats (obs4MIPs) or provided by the user. 
 
-**Main Features**
+## Main Features
 
    +  Facilitates the complex evaluation of ESMs and their simulations submitted to international Model Intercomparison Projects (e.g., CMIP).
    +  Standardized model evaluation can be performed against observations, against other models or to compare different versions of the same model.
@@ -18,7 +15,7 @@ The Earth System Model eValuation Tool (ESMValTool) is a community diagnostics a
    +  CF/CMOR compliant: data from many different projects can be handled (CMIP, obs4mips, ana4mips, CCMI, CCMVal, AEROCOM, etc.). Routines are provided to CMOR-ize non-compliant data.
    +  Integration in modeling workflows: for EMAC, NOAA-GFDL and NEMO, can be easily extended.
 
-**Participating Institutes**
+## Participating Institutes
 
   + Deutsches Zentrum für Luft- und Raumfahrt (DLR), Institut für Physik der Atmosphäre, Oberpfaffenhofen, Germany
   + Swedish Meteorological and Hydrological Institute (SMHI), 60176 Norrköping, Sweden.
@@ -41,14 +38,7 @@ The Earth System Model eValuation Tool (ESMValTool) is a community diagnostics a
   + CNRM-GAME, Météo France and CNRS, Toulouse, France
   + Royal Netherlands Meteorological Institute (KNMI), De Bilt, The Netherlands
 
-
-
-
-title:Documentation
-
-**Installation Notes**
-
-*Prerequisites*
+## Prerequisites*
 
 The ESMValTool has the following software requirements (note that specific diagnostics might require additional software packages):
 
@@ -66,23 +56,17 @@ The ESMValTool has the following software requirements (note that specific diagn
   + Diagnostics written in R require a working installation of the statistical computing software R and that the executable Rscript is in the default search path. In addition, the netCDF libraries (ncdf / ncdf4) for R are needed. Currently, only the diagnostic “Standardized Precipitation index (SPI)” requires R. More diagnostics written in R might be added in the future.
   + Common GNU utilities such as “wc”, “date”, “basename”, and “more”, which are usually part of the standard Linux distribution
 
-*Obtaining the source code*
-
-The ESMValTool can be downloaded here: [Download]({filename}../pages/download.md) 
-
-In addition, ESMValTool will be further developed in a version controlled repository that is accessible only to the development team. The wider climate community is encouraged to contribute to this effort and to join the ESMValTool development team for contribution of additional more in-depth diagnostics for ESM evaluation. Please contact Veronika Eyring or Axel Lauer if interested.
-
-*Software installation*
+## Software installation
 
 The tar-ball can be unpacked with the standard tar command, e.g.,
 
 tar -xvf ESMValTool_v1.0.tar
 
-*User Guide*
+## User Guide
 
-A comprehensive user guide is available at here: [User Guide]({filename}../download/ESMValTool_Users_Guide.pdf)
+A comprehensive user guide is available at here: [User Guide](https://www.esmvaltool.org/download/ESMValTool_Users_Guide.pdf)
 
-*Publication*
+## Publication
 
 The software design of the  ESMValTool and the technical implementation is presented in detail in the Open Access Article: 
 
