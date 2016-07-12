@@ -22,7 +22,7 @@ and partners (see below). All rights reserved.
 ------------------------------------------------------------------------
 
 
-1.  Copyright 2008- Deutsches Zentrum f&uumlr Luft- und Raumfahrt e.V.
+1.  Copyright 2008- Deutsches Zentrum für Luft- und Raumfahrt e.V.
     (DLR), ESMValTool Project PI, "Entire ESMValTool"
 2.  Copyright 2011- Swedish Meteorological and Hydrological Institute
     (SMHI), "Entire ESMValTool"
@@ -56,7 +56,7 @@ and partners (see below). All rights reserved.
 14. Copyright 2015 Institut Pierre Simon Laplace,
     "namelist\_diurnalcycle.xml"
 15. Copyright 2015 University of Reading, "ESGF coupling"
-16. Copyright 2015 CNRM-GAME, M&eacutet&eacuteo France and CNRS,
+16. Copyright 2015 CNRM-GAME, Météo France and CNRS,
     "namelist\_WAMonsoon.xml"
 17. Copyright 2014-2015 Royal Netherlands Meteorological Institute
     (KNMI), "namelist\_SouthernOcean.xml"
