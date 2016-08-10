@@ -124,6 +124,8 @@ end
 ;;#############################################################################
 undef("find_and_read_var")
 function find_and_read_var(var:string,
+		           year1:integer,
+			   year2:integer,
                            err:logical)
 ;;
 ;; Arguments
@@ -154,6 +156,7 @@ begin
     ;; Define files list
     ;; Naming convention: <REALM>.<YYYYMM>-<YYYYMM>.<VAR>.nc
     flist = systemfunc("find " + INPATH + " -type f -name '" + REALM + "." + \
+    	    	       sprinti( "%0.4i", year1 ) + "*-" + sprinti( "%0.4i", year2 ) + \
                        "*." + var + ".nc' 2>/dev/null")
 
     ;; If all missing: give up
@@ -389,7 +392,7 @@ begin
 
     ;; Read variable
     if (name.ne."#RECIP") then  ; GFDL variable
-        xx = find_and_read_var(name, True)
+        xx = find_and_read_var(name, year1, year2, True)
     else
         if (isfilepresent_esmval(RECIPEFILE)) then
             xx = GFDL_recipe(name)  ; complex variable
@@ -410,8 +413,14 @@ begin
 
     ;; Extract given time range
     date = cd_calendar(xz&time, -1)
-    idx1 = ind(date.eq.(100 * year1 + 1))
-    idx2 = ind(date.eq.(100 * year2 + 12))
+; maso_er+ -- only one file being used at GFDL so this is 'safe'
+;    idx1 = (ind(date.eq.(100 * year1 + 1)))
+;    idx2 = (ind(date.eq.(100 * year2 + 12)))
+     idx1 =  0
+     idx2 = dimsizes(date)-1
+     
+; maso_er-
+
 
     if (ismissing(idx1).or.ismissing(idx2)) then
         error_msg("f", "reformat_GFDL_func.ncl", funcname, \
@@ -474,6 +483,9 @@ begin
             if (var&time@calendar.eq."NOLEAP") then
                 var&time@calendar = "noleap"
             end if
+	    if (var&time@calendar.eq."JULIAN") then
+	        var&time@calendar = "standard"
+	    end if
         end if
         if (isatt(var&time, "calendar")) then
             if (var&time@calendar.ne."standard".and.\
@@ -512,7 +524,7 @@ begin
     end if
 
     ;; Level
-    if (iscoord(var, "level")) then
+    if (iscoord(var, "level").or.iscoord(var, "pfull")) then
         var!1 = "plev"
         var&plev = var&plev * 100  ; [hPa] --> [Pa]
         ;; Check ordering (must be monotonically decreasing)
