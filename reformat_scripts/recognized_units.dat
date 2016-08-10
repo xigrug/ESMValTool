@@ -24,22 +24,22 @@ std_unit = %
 alt_unit = %/100,100, 1,100
 
 std_unit = W m-2
-alt_unit = W/m**2,1, W/m2,1
+alt_unit = W/m**2,1, W/m2,1, watts/m2,1
 
 std_unit = 1
 alt_unit = kg/kg,1, kg kg-1,1
 
 std_unit = mole mole-1
-alt_unit = 1e-6,1.e-6, 1e-9,1.e-9, 1e-12,1.e-12, ppm,1.e-6, ppb,1.e-9, ppt,1.e-12, mol/mol,1, mol mol-1,1, mole mole^-1,1
+alt_unit = 1e-6,1.e-6, 1e-9,1.e-9, 1e-12,1.e-12, ppm,1.e-6, ppb,1.e-9, ppt,1.e-12, mol/mol,1, mol mol-1,1, mole mole^-1,1, vmr,1
 
 std_unit = 1e-9
-alt_unit = ppb,1, mol/mol,1.e9
+alt_unit = ppb,1, mol/mol,1.e9, vmr,1.e9
 
 std_unit = DU
 alt_unit = mg m-2, 4.6707e-2, g m-2, 4.6707e-5, kg m-2, 4.6707e-8, mmol m-2, 2.2414, mol m-2, 2.2414e-3 
 
 std_unit = kg m-2 s-1
-alt_unit = kg /(m^2 s),1, kg/(m^2 * s),1, kg/m**2s,1, mol m-2 s-1,0.012, g*m-2*d-1,1.16e-8, kgC/m2/h,2.78e-4, kg/m2/s,1
+alt_unit = kg /(m^2 s),1, kg/(m^2 * s),1, kg/m**2s,1, mol m-2 s-1,0.012, g*m-2*d-1,1.16e-8, kgC/m2/h,2.78e-4, kg/m2/s,1, kg(h2o)/m2/s,1
 
 std_unit = mm d-1
 alt_unit = mm/d,1

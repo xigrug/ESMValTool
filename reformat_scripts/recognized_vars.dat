@@ -17,7 +17,7 @@ std_name = time
 alt_name = t
 
 std_name = plev
-alt_name = p,plevs,lev_p
+alt_name = p,plevs,lev_p,pfull
 
 std_name = lev
 alt_name = 
